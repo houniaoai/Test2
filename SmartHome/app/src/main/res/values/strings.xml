@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SmartHome</string>
+
+    <!--device control-->
+    <string name="http_request_failed">http request failed</string>
+
+    <!--device list-->
+    <string name="online" translatable="false">Device Online</string>
+    <string name="offline" translatable="false">"Device Online"</string>
+</resources>

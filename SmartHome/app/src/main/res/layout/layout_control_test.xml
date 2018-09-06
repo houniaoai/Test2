@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_attribute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="control"
+        android:textColor="#000000"
+        android:textSize="30px" />
+
+    <!--Refrigerator hot water-->
+    <LinearLayout
+        android:id="@+id/fridge_hot_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="control hot water" />
+
+
+        <EditText
+            android:id="@+id/et_temperature"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_weight="3"
+            android:hint="input temperature please..." />
+
+        <TextView
+            android:id="@+id/tv_range"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/hot_water_send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_weight="1"
+            android:text="send" />
+    </LinearLayout>
+
+    <!--Refrigerator ice making-->
+    <LinearLayout
+        android:id="@+id/ice_mark_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ice maker state" />
+
+        <Button
+            android:id="@+id/ice_mark_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="on" />
+
+        <Button
+            android:id="@+id/ice_mark_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="off" />
+
+    </LinearLayout>
+
+    <!--Start and stop of washing machine-->
+    <LinearLayout
+        android:id="@+id/washer_start_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/clothes_washer_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="start washer" />
+
+        <Button
+            android:id="@+id/clothes_washer_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200px"
+            android:text="stop washer" />
+
+    </LinearLayout>
+
+    <!--Dishwasher-->
+    <LinearLayout
+        android:id="@+id/dishwasher_pod_counts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="control pod count" />
+
+
+        <EditText
+            android:id="@+id/et_pod_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_weight="3"
+            android:hint="input temperature please..." />
+
+        <TextView
+            android:id="@+id/tv_pod_range"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/pod_count_send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_weight="1"
+            android:text="send" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/washer_sabbath_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/washer_sabbath_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="turn on sabbath mode" />
+
+        <Button
+            android:id="@+id/washer_sabbath_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200px"
+            android:text="close sabbath mode" />
+
+    </LinearLayout>
+
+</LinearLayout>
